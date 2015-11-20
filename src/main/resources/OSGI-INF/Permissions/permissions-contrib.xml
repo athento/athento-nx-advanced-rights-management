@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component
+	name="org.athento.nuxeo.athento-nx-advanced-rights-management.permissions"
+	version="1.0.0">
+
+	<require>org.nuxeo.runtime.started</require>
+
+	<extension target="org.nuxeo.ecm.core.security.SecurityService"
+		point="permissions">
+		<permission name="ReadWriteNoRemove">
+			<include>Read</include>
+			<include>AddChildren</include>
+			<include>WriteProperties</include>
+			<include>ManageWorkflows</include>
+			<include>WriteLifeCycle</include>
+			<include>WriteVersion</include>
+		</permission>
+	</extension>
+
+	<extension target="org.nuxeo.ecm.core.security.SecurityService"
+		point="permissionsVisibility">
+		<visibility>
+			<item order="10" show="true">ReadWriteNoRemove</item>
+		</visibility>
+	</extension>
+
+</component>

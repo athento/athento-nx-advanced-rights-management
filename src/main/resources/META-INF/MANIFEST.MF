@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Require-Bundle: org.nuxeo.runtime
+Bundle-Vendor: Athento
+Bundle-Version: 1.0.0
+Bundle-Name: Athento NX Advanced Rights Management
+Nuxeo-Component: OSGI-INF/Permissions/permissions-contrib.xml,
+ OSGI-INF/Listing-Views/Filters/filters-contrib.xml,
+ OSGI-INF/Listing-Views/Tabs/tabs-action-contrib.xml
+Bundle-ManifestVersion: 2
+Created-By: Athento
+Bundle-SymbolicName: athento-nx-advanced-rights-management
+

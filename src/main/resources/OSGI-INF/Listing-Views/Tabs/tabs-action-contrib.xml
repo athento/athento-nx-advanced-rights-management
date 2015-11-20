@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component
+	name="org.athento.nuxeo.athento-nx-advanced-rights-management.tabs-action"
+	version="1.0.0">
+	<require>org.nuxeo.runtime.started</require>
+
+	<extension target="org.nuxeo.ecm.platform.actions.ActionService"
+		point="actions">
+
+		<!-- Deactivate the default rights admin subtab -->
+		<action id="TAB_RIGHTS" enabled="false" />
+
+		<!-- Activate our new sub tab to manage Rights on all documents -->
+		<action id="TAB_NON_FOLDERISH_RIGHTS" link="/incl/tabs/document_rights.xhtml"
+			order="50" label="action.view.rights" icon="/icons/file.gif">
+			<category>TAB_MANAGE_sub_tab</category>
+			<filter-id>non-folderish-rights</filter-id>
+		</action>
+
+	</extension>
+
+</component>
